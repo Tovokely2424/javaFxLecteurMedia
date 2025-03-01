@@ -15,6 +15,11 @@
     <bottom>
         <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;" >
             <ProgressBar fx:id="progressBarMusic" prefWidth="500"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Label fx:id="currentTimeLabel" text="00:00"/>
+                <Label text="/"/>
+                <Label fx:id="totalTimeLabel" text="00:00"/>
+            </HBox>
             <HBox spacing="10" alignment="center" style="-fx-padding: 10;">
                 <Button text="▶️Play" fx:id="playButton"/>
                 <Button text="⏸Pause" fx:id="pauseButton"/>
