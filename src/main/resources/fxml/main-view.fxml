@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="main.java1.app.controllers.MainController">
+    <center>
+        <Label text="Lecteur Music" BorderPane.alignment="CENTER"/>
+    </center>
+    <bottom>
+        <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;" >
+            <ProgressBar fx:id="progressBarMusic" prefWidth="500"/>
+            <HBox spacing="10" alignment="center" style="-fx-padding: 10;">
+                <Button text="▶️Play" fx:id="playButton"/>
+                <Button text="⏸Pause" fx:id="pauseButton"/>
+                <Button text="⏹ Stop" fx:id="stopButton"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
