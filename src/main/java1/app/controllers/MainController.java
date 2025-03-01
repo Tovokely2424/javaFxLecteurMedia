@@ -41,7 +41,7 @@ public class MainController {
                 mediaPlayer = new MediaPlayer(media);
 
                 //ProgressBar
-                mediaPlayer.currentTimeProperty().addListener((obs, oldTime, newTime)->updateProgressBar(newTime));
+                mediaPlayer.currentTimeProperty().addListener((obs, oldTime, newTime)->updateUILecteur(newTime));
                 mediaPlayer.setOnReady(()->{
                     Duration duration = mediaPlayer.getTotalDuration();
                     totalTimeLabel.setText(formatTime(duration));
@@ -74,7 +74,7 @@ public class MainController {
         }
     }
 
-    private void updateProgressBar(Duration currentTime){
+    private void updateUILecteur(Duration currentTime){
         if (mediaPlayer != null){
             double progress =  currentTime.toSeconds() / mediaPlayer.getTotalDuration().toSeconds();
             Platform.runLater(()->{
