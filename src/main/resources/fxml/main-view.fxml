@@ -16,9 +16,9 @@
         <VBox spacing="10" alignment="CENTER" style="-fx-padding: 10;" >
             <ProgressBar fx:id="progressBarMusic" prefWidth="500"/>
             <HBox spacing="10" alignment="CENTER">
-                <Label fx:id="currentTimeLabel" text="00:00"/>
-                <Label text="/"/>
-                <Label fx:id="totalTimeLabel" text="00:00"/>
+                <Label fx:id="currentTimeLabel" text="00:00" HBox.hgrow="ALWAYS"/>
+                <Pane fx:id="spacer" HBox.hgrow="ALWAYS"/>
+                <Label fx:id="totalTimeLabel" text="00:00" HBox.hgrow="ALWAYS" alignment="CENTER_RIGHT"/>
             </HBox>
             <HBox spacing="10" alignment="center" style="-fx-padding: 10;">
                 <Button text="▶️Play" fx:id="playButton"/>
